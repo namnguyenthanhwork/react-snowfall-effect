@@ -1,0 +1,78 @@
+{
+  "name": "@namnguyenthanhwork/react-snowfall-effect",
+  "version": "1.0.3",
+  "description": "Create stunning, customizable snowfall animations for your React applications with ease. Perfect for winter themes, Christmas websites, or any application that needs beautiful falling particle effects.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "snowfall",
+    "animation",
+    "snow",
+    "effect",
+    "winter",
+    "christmas",
+    "particles",
+    "falling",
+    "web-animation",
+    "javascript",
+    "typescript",
+    "component",
+    "customizable",
+    "interactive",
+    "ui",
+    "frontend",
+    "web-development",
+    "react-component",
+    "snow-effect",
+    "winter-animation",
+    "christmas-effect",
+    "particle-system",
+    "canvas-animation",
+    "performance-optimized",
+    "responsive",
+    "modern",
+    "beautiful"
+  ],
+  "author": {
+    "name": "Thành Nam Nguyễn",
+    "email": "namnguyenthanh.work@gmail.com",
+    "url": "https://www.thanhnamnguyen.dev/",
+    "github": "https://github.com/namnguyenthanhwork"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/namnguyenthanhwork/react-snowfall-effect.git"
+  },
+  "bugs": {
+    "url": "https://github.com/namnguyenthanhwork/react-snowfall-effect/issues"
+  },
+  "homepage": "https://react-snowfall-effect-demo.vercel.app",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "typescript": "^5.8.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

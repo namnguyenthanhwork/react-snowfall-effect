@@ -1,0 +1,30 @@
+{
+  "name": "@namnguyenthanhwork/react-snowfall-effect-monorepo",
+  "version": "1.0.3",
+  "description": "Monorepo for react-snowfall-effect library and demo",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build:lib && npm run build:demo",
+    "build:lib": "cd packages/react-snowfall-effect && npm run build",
+    "build:demo": "cd packages/demo && npm run build",
+    "dev:demo": "cd packages/demo && npm run dev",
+    "publish:lib": "cd packages/react-snowfall-effect && npm publish"
+  },
+  "author": {
+    "name": "Thành Nam Nguyễn",
+    "email": "namnguyenthanh.work@gmail.com",
+    "url": "https://www.thanhnamnguyen.dev/"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/namnguyenthanhwork/react-snowfall-effect.git"
+  },
+  "bugs": {
+    "url": "https://github.com/namnguyenthanhwork/react-snowfall-effect/issues"
+  },
+  "homepage": "https://react-snowfall-effect-demo.vercel.app"
+}
