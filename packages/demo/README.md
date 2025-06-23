@@ -1,56 +1,109 @@
 # React Snowfall Effect Demo
 
-This is a demo application showcasing the `@namnguyenthanhwork/react-snowfall-effect` library.
+This is a demo application showcasing the `@namnguyenthanhwork/react-snowfall-effect` library. The demo features a comprehensive interactive playground where you can test and experiment with all available snowfall configurations and effects.
 
-## Development
+## 🌟 Features
 
-### Local Development (with local library)
+- **Interactive Configuration Panel** - Real-time customization of snowfall effects
+- **Multiple Effect Types** - Traditional snowflakes, hearts, stars, and custom shapes
+- **Advanced Physics** - Wind, gravity, rotation, and bounce effects
+- **Custom Images** - Support for custom snowflake images and SVG shapes
+- **Performance Controls** - FPS settings and optimization options
+- **Visual Effects** - Fade edges, mouse following, melting, and accumulation
+- **Responsive Design** - Built with Next.js 15 and Tailwind CSS
 
-For development with the local version of the library:
+## 🚀 Development
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Getting Started
 
 ```bash
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-npm run dev:local
 ```
 
-This will:
+The development server will start at `http://localhost:3000`.
 
-1. Install the local version of the library (`file:../react-snowfall-effect`)
-2. Start the development server
+### Development with Local Library
 
-### Development (with published library)
+Please use `"@namnguyenthanhwork/react-snowfall-effect": "file:../react-snowfall-effect"` in your `package.json`.
 
-To test with the published version of the library:
+This allows you to develop the library and demo simultaneously. Make sure to link the local library correctly in your `package.json`:
+
+```json
+{
+  "dependencies": {
+    "@namnguyenthanhwork/react-snowfall-effect": "file:../react-snowfall-effect"
+  }
+}
+```
+
+Then run (root directory):
 
 ```bash
-npm run dev:prod
+# Install dependencies (uses npm workspaces)
+npm install
+
+# Build the library
+npm run build:lib
+
+# Run the demo in development mode
+npm run dev:demo
 ```
 
-This will:
+The demo uses the local library via workspace dependencies, so changes to the library will be reflected in the demo after rebuilding.
 
-1. Install the published version from npm (`^1.0.2`)
-2. Start the development server
-
-## Production Build
-
-For production builds (used by Vercel):
+## 🏗️ Production Build
 
 ```bash
 npm run build
 ```
 
-This automatically uses the published npm package.
+This creates an optimized production build in the `.next` directory.
 
-## Scripts
+## 📜 Available Scripts
 
-- `npm run dev` - Development with local library (default)
-- `npm run dev:local` - Explicitly use local library for development
-- `npm run dev:prod` - Use published library for development testing
-- `npm run build` - Production build with published library
-- `npm run install:local` - Install local library version
-- `npm run install:prod` - Install published library version
+- `npm run dev` - Start development server
+- `npm run build` - Create production build
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-## Deployment
+## 🎨 Demo Components
 
-When deploying to Vercel, the build script automatically uses the published npm package, so no configuration changes are needed.
+The demo includes several interactive sections:
+
+- **Basic Configuration** - Snowflake count, speed, size controls
+- **Physics Settings** - Wind, gravity, rotation effects
+- **Visual Customization** - Colors, opacity, shapes
+- **Advanced Features** - Custom images, special effects
+- **Performance Settings** - FPS and optimization controls
+
+## 🌐 Live Demo
+
+Visit the live demo at: [https://react-snowfall-effect-demo.vercel.app](https://react-snowfall-effect-demo.vercel.app)
+
+## 🔧 Technology Stack
+
+- **Next.js 15** - React framework
+- **React 19** - UI library
+- **TypeScript** - Type safety
+- **Tailwind CSS 4** - Styling
+- **@namnguyenthanhwork/react-snowfall-effect** - Snowfall library
+
+## 📄 License
+
+MIT License - see the [LICENSE](../../LICENSE) file for details.
+
+## 👨‍💻 Author
+
+**Thành Nam Nguyễn**
+
+- Website: [https://www.thanhnamnguyen.dev](https://www.thanhnamnguyen.dev)
+- Email: namnguyenthanh.work@gmail.com
